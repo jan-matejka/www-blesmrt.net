@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<title>{{ main.title }}</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="static/bootstrap/v2.2.2/css/bootstrap.min.css" rel="stylesheet">
+		<link href="static/bootstrap/v2.2.2/css/bootstrap-responsive.css" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="static/bootstrap/v2.2.2/js/bootstrap.js"></script>
+
+		<link href="static/blesmrt/v0.1.0/css/blesmrt.css" rel="stylesheet">
+	</head>
+	<body data-spy="scroll" data-target="#mainnav">
+<!-- TODO: fill in ga -->
+			<section class="container first">
+				{{ lamy.get_content() }}
+			</section>
+
+			<section class="container second">
+					{% set cols = 3 %}
+
+					{% for s in srv %}
+						{% if loop.index0 is divisibleby cols or loop.first %}
+				<div class="row">
+						{% endif %}
+						<div class="span{{ cols+1 }}">
+							<h2>{{ s.get_title() }}</h2>
+							{{ s.get_content() }}
+						</div>
+						{% if loop.index is divisibleby cols or loop.last %}
+						</div>
+						{% endif %}
+					{% endfor %}
+
+
+					<div class="row">
+						<hr>
+						<div class="span12">
+						<h2>{{ prispejte.get_title() }}</h2>
+							{{ prispejte.get_content() }}
+						</div>
+					</div>
+			</section>
+
+
+			<section class="container" id="fenomen">
+				<div class="row">
+					<hr>
+						<h2>{{ fenomen.get_title() }}</h2>
+					<div class="span6">
+						{{ fenomen.get_1() }}
+					</div>
+
+
+					<div class="span6">
+						{{ fenomen.get_2() }}
+					</div>
+				</div>
+			</section>
+	</body>
+</html>
