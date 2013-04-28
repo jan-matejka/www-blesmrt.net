@@ -83,13 +83,13 @@ def main():
 
     lamy = Section(u"", u"""
         <p class="lamy">
-            Nechcete být<strong> Lamy</strong>, které mají <strong>i na
+            Nechceš být<strong> Lama</strong>, která má <strong>i na
             vizitkách</strong> pepicek@seznam.cz?
         </p>
 
-        <p class="poridte">Pořiďte si <strong>email</strong>,<strong>
+        <p class="poridte">Pořiď si <strong>email</strong>,<strong>
             jabber</strong> a dokonce i <strong>webový kancelářský
-            balík</strong> na doméně která o vás dokáže říct
+            balík</strong> na doméně která o tobě dokáže říct
         </p>
 
         <p class="neboji">
@@ -97,7 +97,7 @@ def main():
         </p>
 
         <p class="">
-            <h1>Připojte se k Blesmrt.net již dnes!</h1>
+            <h1>Připoj se k Blesmrt.net již dnes!</h1>
         </p>
     """)
 
@@ -144,7 +144,7 @@ def main():
         Pak už budeš krutopřísnej  jako My.
     </p>
 
-    <p>Poznámka: je mi jedno co tam napíšeš za údaje, ale na hromadě míst budete
+    <p>Poznámka: je mi jedno co tam napíšeš za údaje, ale na hromadě míst budeš
     vidět jako "Jméno Příjmení".</p>
         """)
 
@@ -177,10 +177,10 @@ def main():
     </p>
     """)
 
-    prispejte = Section(u"Přispějte", u"""
-    Pro chod tohoto serveru jsou potřeba, jak už určitě tušíte peníze.
+    prispejte = Section(u"Přispěj", u"""
+    Pro chod tohoto serveru jsou potřeba, jak už určitě tušíš peníze.
 
-Proto přispějte, pokud máte z čeho (láhve alkoholu jsou taktéž příjímány)
+Proto přispěj, pokud máš z čeho (láhve alkoholu jsou taktéž příjímány)
 
 <div style="display:block;text-align:left">
 <a href="http://blesmrt.eu/donate.html" rel="nofollow" target="_blank"><img
